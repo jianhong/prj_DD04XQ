@@ -47,19 +47,19 @@ elif args.GRN == 'mouse':
 elif args.GRN == 'Celegans':
     base_GRN = co.data.load_Celegans_promoter_base_GRN()
 elif args.GRN == 'Pig':
-    base_GRN = co.load_Pig_promoter_base_GRN()
+    base_GRN = co.data.load_Pig_promoter_base_GRN()
 elif args.GRN == 'Scerevisiae':
-    base_GRN = co.load_Scerevisiae_promoter_base_GRN()
+    base_GRN = co.data.load_Scerevisiae_promoter_base_GRN()
 elif args.GRN == 'chicken':
-    base_GRN = co.load_chicken_promoter_base_GRN()
+    base_GRN = co.data.load_chicken_promoter_base_GRN()
 elif args.GRN == 'drosophila':
-    base_GRN = co.load_drosophila_promoter_base_GRN()
+    base_GRN = co.data.load_drosophila_promoter_base_GRN()
 elif args.GRN == 'rat':
-    base_GRN = co.load_rat_promoter_base_GRN()
+    base_GRN = co.data.load_rat_promoter_base_GRN()
 elif args.GRN == 'xenopus_tropicalis':
-    base_GRN = co.load_xenopus_tropicalis_promoter_base_GRN()
+    base_GRN = co.data.load_xenopus_tropicalis_promoter_base_GRN()
 elif args.GRN == 'zebrafish':
-    base_GRN = co.load_zebrafish_promoter_base_GRN()
+    base_GRN = co.data.load_zebrafish_promoter_base_GRN()
 else:
     base_GRN = pd.read_parquet(args.GRN)
 

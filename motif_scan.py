@@ -87,6 +87,7 @@ tfi.scan(fpr=fpr,
          n_cpus=N_CPU)
 # Save tfinfo object
 tfi.to_hdf5(file_path=tfinfo_h5_output)
+# tfi=ma.load_TFinfo(tfinfo_h5_output)
 
 # Check motif scan results
 tfi.scanned_df.head()
@@ -102,9 +103,7 @@ tfi.make_TFinfo_dataframe_and_dictionary(verbose=True)
 
 df = tfi.to_dataframe()
 df.head()
+# df.loc[:, 'Cebpa':'VDR'].sum(0)
 
 # Save result as a dataframe
-df = tfi.to_dataframe()
 df.to_parquet(tf_parquet_output)
-
-
